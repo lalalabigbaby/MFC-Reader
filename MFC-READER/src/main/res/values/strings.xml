@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MFC Reader</string>
+    <string name="advice1">要读取数据，请勾选读数据并将卡贴到手机背面</string>
+    <string name="adisecter">请输入要写入的扇区</string>
+    <string name="advblock">请输入要写入的块</string>
+    <string name="datewrite">写入的数据</string>
+    <string name="read">读数据</string>
+    <string name="write">写数据</string>
+    <string name="advkey">手动输入密钥来写加密扇区</string>
+</resources>

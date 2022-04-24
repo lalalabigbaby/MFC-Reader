@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="zkar.com.testnfc.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/sector"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical|center"
+            android:autofillHints="0"
+            android:layout_gravity="left"
+            android:hint="@string/adisecter"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/block"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical|center"
+            android:autofillHints="1"
+            android:layout_gravity="right"
+            android:hint="@string/advblock"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/keyab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:digits="0123456789ABCDEF"
+        android:inputType="textCapCharacters"
+        android:autofillHints="FFFFFFFFFFFF"
+        android:gravity="center"
+        android:hint="@string/advkey" />
+
+
+    <EditText
+        android:id="@+id/writecon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:autofillHints="wuhantextileuniv"
+        android:gravity="center"
+        android:hint="@string/datewrite" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#302e2e" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/read" />
+
+        <RadioButton
+            android:id="@+id/write"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/write" />
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:drawable/edit_text">
+
+        <TextView
+            android:id="@+id/readcon"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorless"
+            android:textIsSelectable="true"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:text="@string/advice1" />
+    </ScrollView>
+</LinearLayout>
